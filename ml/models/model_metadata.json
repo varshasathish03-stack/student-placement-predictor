@@ -1,0 +1,99 @@
+{
+  "model_name": "LogisticRegression",
+  "dataset": "Placement_Data_Full_Class.csv",
+  "kaggle_source": "https://www.kaggle.com/competitions/binary-classification-of-student-placement-outcomes",
+  "target": "status (Placed=1, Not Placed=0)",
+  "features": {
+    "numerical": [
+      "ssc_p",
+      "hsc_p",
+      "degree_p",
+      "etest_p",
+      "mba_p"
+    ],
+    "categorical": [
+      "gender",
+      "ssc_b",
+      "hsc_b",
+      "hsc_s",
+      "degree_t",
+      "workex",
+      "specialisation"
+    ],
+    "all_transformed": [
+      "ssc_p",
+      "hsc_p",
+      "degree_p",
+      "etest_p",
+      "mba_p",
+      "gender_F",
+      "gender_M",
+      "ssc_b_Central",
+      "ssc_b_Others",
+      "hsc_b_Central",
+      "hsc_b_Others",
+      "hsc_s_Arts",
+      "hsc_s_Commerce",
+      "hsc_s_Science",
+      "degree_t_Comm&Mgmt",
+      "degree_t_Others",
+      "degree_t_Sci&Tech",
+      "workex_No",
+      "workex_Yes",
+      "specialisation_Mkt&Fin",
+      "specialisation_Mkt&HR"
+    ]
+  },
+  "training_date": "2026-09-16T09:29:30.493529",
+  "train_rows": 172,
+  "test_rows": 43,
+  "cv_results": {
+    "cv_accuracy": 0.854453781512605,
+    "cv_precision": 0.8906565656565657,
+    "cv_recall": 0.8981884057971016,
+    "cv_f1": 0.8932712690379884,
+    "cv_roc_auc": 0.9401515151515152
+  },
+  "test_metrics": {
+    "accuracy": 0.8604651162790697,
+    "precision": 0.9285714285714286,
+    "recall": 0.8666666666666667,
+    "f1": 0.896551724137931,
+    "roc_auc": 0.9384615384615385,
+    "confusion_matrix": [
+      [
+        11,
+        2
+      ],
+      [
+        4,
+        26
+      ]
+    ]
+  },
+  "feature_importances": {
+    "ssc_p": 1.8529867100210882,
+    "hsc_p": 0.9041106866357334,
+    "degree_p": 1.0953449319871282,
+    "etest_p": -0.03847105230855792,
+    "mba_p": -0.9611001007373857,
+    "gender_F": -0.5007347835808357,
+    "gender_M": 0.5010334625995492,
+    "ssc_b_Central": -0.3439542386958453,
+    "ssc_b_Others": 0.3442529177145586,
+    "hsc_b_Central": 0.12939979111033073,
+    "hsc_b_Others": -0.12910111209161715,
+    "hsc_s_Arts": 0.30919933352276086,
+    "hsc_s_Commerce": -0.16275456262472635,
+    "hsc_s_Science": -0.1461460918793206,
+    "degree_t_Comm&Mgmt": 0.6447742012811616,
+    "degree_t_Others": -0.0886530105557358,
+    "degree_t_Sci&Tech": -0.5558225117067127,
+    "workex_No": -0.8464102466281229,
+    "workex_Yes": 0.846708925646837,
+    "specialisation_Mkt&Fin": 0.05736046012280927,
+    "specialisation_Mkt&HR": -0.057061781104095544
+  },
+  "python_version": "3.12.3",
+  "sklearn_version": "3.0.3"
+}

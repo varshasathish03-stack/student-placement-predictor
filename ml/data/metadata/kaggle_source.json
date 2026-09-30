@@ -1,0 +1,14 @@
+{
+  "source_platform": "Kaggle",
+  "source_url": "https://www.kaggle.com/competitions/binary-classification-of-student-placement-outcomes",
+  "dataset_identifier": "factors-affecting-campus-placement",
+  "download_date": "2026-09-16",
+  "local_raw_path": "ml/data/raw/Placement_Data_Full_Class.csv",
+  "file_name": "Placement_Data_Full_Class.csv",
+  "file_size_bytes": 19712,
+  "rows": 215,
+  "cols": 15,
+  "target_column": "status",
+  "leakage_columns": ["salary"],
+  "id_columns": ["sl_no"]
+}
